@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07AC2B14-1F9A-3CFD-BA12-B117D0B42519}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>protoc</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\protobuf_VS2019\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\protobuf_VS2019\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">protoc.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\protobuf_VS2019\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\protobuf_VS2019\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">protoc</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Debug\libprotocd.lib;Debug\libprotobufd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/protobuf_VS2019/build/Debug/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/protobuf_VS2019/build/Debug/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Release\libprotoc.lib;Release\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/protobuf_VS2019/build/Release/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/protobuf_VS2019/build/Release/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>MinSizeRel\libprotoc.lib;MinSizeRel\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/protobuf_VS2019/build/MinSizeRel/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/protobuf_VS2019/build/MinSizeRel/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8 /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4065;4244;4251;4267;4305;4307;4309;4334;4355;4506;4800;4996</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;GOOGLE_PROTOBUF_CMAKE_BUILD;HAVE_ZLIB;PROTOBUF_USE_DLLS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\zlib_VS2019\package\win64\Debug\include;E:\protobuf_VS2019\build;E:\protobuf_VS2019\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>RelWithDebInfo\libprotoc.lib;RelWithDebInfo\libprotobuf.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>E:/protobuf_VS2019/build/RelWithDebInfo/protoc.lib</ImportLibrary>
+      <ProgramDataBaseFile>E:/protobuf_VS2019/build/RelWithDebInfo/protoc.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\protobuf_VS2019\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/protobuf_VS2019/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/protobuf_VS2019 -BE:/protobuf_VS2019/build --check-stamp-file E:/protobuf_VS2019/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.30\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeSystem.cmake;E:\protobuf_VS2019\cmake\extract_includes.bat.in;E:\protobuf_VS2019\cmake\install.cmake;E:\protobuf_VS2019\cmake\libprotobuf-lite.cmake;E:\protobuf_VS2019\cmake\libprotobuf.cmake;E:\protobuf_VS2019\cmake\libprotoc.cmake;E:\protobuf_VS2019\cmake\protobuf-config-version.cmake.in;E:\protobuf_VS2019\cmake\protobuf-config.cmake.in;E:\protobuf_VS2019\cmake\protobuf-lite.pc.cmake;E:\protobuf_VS2019\cmake\protobuf-module.cmake.in;E:\protobuf_VS2019\cmake\protobuf-options.cmake;E:\protobuf_VS2019\cmake\protobuf.pc.cmake;E:\protobuf_VS2019\cmake\protoc.cmake;E:\protobuf_VS2019\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\protobuf_VS2019\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/protobuf_VS2019/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/protobuf_VS2019 -BE:/protobuf_VS2019/build --check-stamp-file E:/protobuf_VS2019/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.30\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeSystem.cmake;E:\protobuf_VS2019\cmake\extract_includes.bat.in;E:\protobuf_VS2019\cmake\install.cmake;E:\protobuf_VS2019\cmake\libprotobuf-lite.cmake;E:\protobuf_VS2019\cmake\libprotobuf.cmake;E:\protobuf_VS2019\cmake\libprotoc.cmake;E:\protobuf_VS2019\cmake\protobuf-config-version.cmake.in;E:\protobuf_VS2019\cmake\protobuf-config.cmake.in;E:\protobuf_VS2019\cmake\protobuf-lite.pc.cmake;E:\protobuf_VS2019\cmake\protobuf-module.cmake.in;E:\protobuf_VS2019\cmake\protobuf-options.cmake;E:\protobuf_VS2019\cmake\protobuf.pc.cmake;E:\protobuf_VS2019\cmake\protoc.cmake;E:\protobuf_VS2019\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\protobuf_VS2019\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/protobuf_VS2019/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/protobuf_VS2019 -BE:/protobuf_VS2019/build --check-stamp-file E:/protobuf_VS2019/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.30\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeSystem.cmake;E:\protobuf_VS2019\cmake\extract_includes.bat.in;E:\protobuf_VS2019\cmake\install.cmake;E:\protobuf_VS2019\cmake\libprotobuf-lite.cmake;E:\protobuf_VS2019\cmake\libprotobuf.cmake;E:\protobuf_VS2019\cmake\libprotoc.cmake;E:\protobuf_VS2019\cmake\protobuf-config-version.cmake.in;E:\protobuf_VS2019\cmake\protobuf-config.cmake.in;E:\protobuf_VS2019\cmake\protobuf-lite.pc.cmake;E:\protobuf_VS2019\cmake\protobuf-module.cmake.in;E:\protobuf_VS2019\cmake\protobuf-options.cmake;E:\protobuf_VS2019\cmake\protobuf.pc.cmake;E:\protobuf_VS2019\cmake\protoc.cmake;E:\protobuf_VS2019\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\protobuf_VS2019\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/protobuf_VS2019/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\CMake\bin\cmake.exe -SE:/protobuf_VS2019 -BE:/protobuf_VS2019/build --check-stamp-file E:/protobuf_VS2019/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;D:\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;D:\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;D:\CMake\share\cmake-3.30\Modules\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;D:\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;D:\CMake\share\cmake-3.30\Modules\FindThreads.cmake;D:\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;D:\CMake\share\cmake-3.30\Modules\GNUInstallDirs.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckFlagCommonConfig.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckLinkerFlag.cmake;D:\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;D:\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;D:\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeCXXCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeRCCompiler.cmake;E:\protobuf_VS2019\build\CMakeFiles\3.30.1\CMakeSystem.cmake;E:\protobuf_VS2019\cmake\extract_includes.bat.in;E:\protobuf_VS2019\cmake\install.cmake;E:\protobuf_VS2019\cmake\libprotobuf-lite.cmake;E:\protobuf_VS2019\cmake\libprotobuf.cmake;E:\protobuf_VS2019\cmake\libprotoc.cmake;E:\protobuf_VS2019\cmake\protobuf-config-version.cmake.in;E:\protobuf_VS2019\cmake\protobuf-config.cmake.in;E:\protobuf_VS2019\cmake\protobuf-lite.pc.cmake;E:\protobuf_VS2019\cmake\protobuf-module.cmake.in;E:\protobuf_VS2019\cmake\protobuf-options.cmake;E:\protobuf_VS2019\cmake\protobuf.pc.cmake;E:\protobuf_VS2019\cmake\protoc.cmake;E:\protobuf_VS2019\cmake\version.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\protobuf_VS2019\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\protobuf_VS2019\src\google\protobuf\compiler\main.cc" />
+    <ResourceCompile Include="E:\protobuf_VS2019\build\version.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\protobuf_VS2019\build\ZERO_CHECK.vcxproj">
+      <Project>{B65BC99D-D55D-3578-9F6F-9BB06E5CA4AE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\protobuf_VS2019\build\libprotobuf.vcxproj">
+      <Project>{886B55E9-9FEA-33E5-A221-6432E6C3711D}</Project>
+      <Name>libprotobuf</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\protobuf_VS2019\build\libprotoc.vcxproj">
+      <Project>{A03B9976-5FB4-3B6F-AF97-A661E20AEE02}</Project>
+      <Name>libprotoc</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

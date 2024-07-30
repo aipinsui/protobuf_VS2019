@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\protobuf_VS2019\build\CMakeFiles\b0aef3f75a19dba6ca662f94b9193e5d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7E1C69D1-7640-3520-B987-AED374C9C205}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
