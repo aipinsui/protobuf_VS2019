@@ -1,0 +1,11 @@
+prefix=E:/protobuf_VS2019/package
+exec_prefix=E:/protobuf_VS2019/package
+libdir=E:/protobuf_VS2019/package/lib
+includedir=E:/protobuf_VS2019/package/include
+
+Name: Protocol Buffers
+Description: Google's Data Interchange Format
+Version: 3.21.10.0
+Libs: -L${libdir} -lprotobuf 
+Cflags: -I${includedir}
+Conflicts: protobuf-lite
